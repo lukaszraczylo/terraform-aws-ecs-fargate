@@ -13,8 +13,7 @@ module ecs-cluster {
 # ECS Task Definition
 #------------------------------------------------------------------------------
 module "td" {
-  source  = "cn-terraform/ecs-fargate-task-definition/aws"
-  version = "1.0.11"
+  source  = "github.com/lukaszraczylo/terraform-aws-ecs-fargate-task-definition/aws"
   # source  = "../terraform-aws-ecs-fargate-task-definition"
 
   name_preffix                 = var.name_preffix
