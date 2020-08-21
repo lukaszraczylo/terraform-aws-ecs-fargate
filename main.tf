@@ -59,7 +59,7 @@ module "ecs-alb" {
   version = "1.0.2"
   # source  = "../terraform-aws-ecs-alb"
 
-  name_preffix = "${var.name_preffix}"
+  name_preffix = var.name_preffix
   vpc_id       = var.vpc_id
 
   # Application Load Balancer
